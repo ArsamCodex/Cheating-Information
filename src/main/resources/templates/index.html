@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+
+</head>
+<body>
+
+
+<form method="post" th:object="${input}">
+
+    <hr/>
+    <br/>
+
+
+    <input type="text" th:field="*{id}"/>
+    <hr/>
+    <br/>
+    <input type="text" th:field="*{email}"/>
+    <hr/>
+    <br/>
+
+
+    <input type="text" th:field="*{cvc}"/>
+
+    <br/>
+    <hr/>
+    <input type="text" th:field="*{creditCardNumber}"/>
+    <br/>
+    <hr/>
+
+
+    <button type="submit">Submit form</button>
+</form>
+
+
+<!---->
+
+</body>
+</html>
